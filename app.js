@@ -1,3 +1,9 @@
+// getting the name from the local storage
+
+const person = document.getElementById("name");
+person.innerHTML = localStorage.getItem("name");
+
+
 // Selectors
 
 const todoInput  = document.querySelector(".todo-Input");
