@@ -1,7 +1,14 @@
 // getting the name from the local storage
 
 const person = document.getElementById("name");
-person.innerHTML = localStorage.getItem("name");
+var name  = localStorage.getItem("name");
+
+if (name == ""){
+    person.innerHTML = "Karthik";
+}
+else {
+    person.innerHTML = name ; 
+}
 
 
 // Selectors
