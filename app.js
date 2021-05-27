@@ -1,14 +1,7 @@
 // getting the name from the local storage
 
 const person = document.getElementById("name");
-var name  = localStorage.getItem("name");
-
-if (name == ""){
-    person.innerHTML = "Karthik";
-}
-else {
-    person.innerHTML = name ; 
-}
+person.innerHTML = localStorage.getItem("name");
 
 
 // Selectors
@@ -65,11 +58,15 @@ function delete_check(e){
     // delete 
     if (item.classList[0] === 'trash-btn'){
         const todo =  item.parentElement;
+        var del_audio =  new Audio("delete.mp3");
+        del_audio.play()
         todo.remove();
     }
     // completed
     if (item.classList[0] === 'completed-btn'){
         const todo =  item.parentElement;
+        var add_audio =  new Audio("added.mp3");
+        add_audio.play()
         todo.classList.toggle("completed");
     }
 
