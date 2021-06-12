@@ -12,3 +12,13 @@
 1) Local Storage of the variables 
 2) Using Unsplash random images API
 3) Using Bootstrap 
+
+## Sample 
+
+### Intro page 
+
+![alt text](https://github.com/karthik-siru/TO-DO-list/blob/main/sample/into.png)<br>
+
+### To do List 
+
+![alt text](https://github.com/karthik-siru/TO-DO-list/blob/main/sample/todo_list.png)<br>
